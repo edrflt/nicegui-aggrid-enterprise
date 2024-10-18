@@ -6,7 +6,7 @@ To install the NiceGUI AG Grid Enterprise component, use the following pip comma
 
 pip install nicegui-aggrid-enterprise
 
-##Usage
+## Usage
 Below is a minimally usable example of how to use the AG Grid Enterprise component in your NiceGUI application:
 
 ```python
