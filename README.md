@@ -13,6 +13,9 @@ Below is a minimally usable example of how to use the AG Grid Enterprise compone
 from nicegui import ui
 from nicegui_aggrid_enterprise import aggrid
 
+# Set license key
+aggrid.license_key = "MY_AGGRID_LICENSE_KEY"
+
 # Define grid options
 options = {
     'columnDefs': [
