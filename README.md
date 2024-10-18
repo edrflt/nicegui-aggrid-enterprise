@@ -11,7 +11,7 @@ Below is a minimally usable example of how to use the AG Grid Enterprise compone
 
 ```python
 from nicegui import ui
-from nicegui_aggrid_enterprise import AgGrid
+from nicegui_aggrid_enterprise import aggrid
 
 # Define grid options
 options = {
@@ -29,8 +29,8 @@ options = {
     'editable': True
 }
 
-# Create an instance of AgGrid
-grid = AgGrid(options=options)
+# Create an instance of aggrid
+grid = aggrid(options=options)
 
 # Start the NiceGUI application
 ui.run()
