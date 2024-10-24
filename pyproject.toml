@@ -1,6 +1,6 @@
 [project]
 name = "nicegui-aggrid-enterprise"
-version = "0.1.1"
+version = "0.1.2"
 description = "Use Aggrid Enterprise in your NiceGUI app."
 authors = [{name = "Alex Pilon", email="alex.pilon@gmail.com"}]
 license = "MIT"
