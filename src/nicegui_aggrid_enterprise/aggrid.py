@@ -14,8 +14,8 @@ class AgGrid(
 
     def __init__(
         self,
-        options: dict,
         *,
+        options: dict = {},  # noqa: B006
         html_columns: list[int] = [],  # noqa: B006
         theme: str = "balham",
         auto_size_columns: bool = True,
@@ -36,7 +36,9 @@ class AgGrid(
         super().update()
         self.run_method("update_grid")
 
-    def run_grid_method(self, name: str, *args, timeout: float = 1) -> AwaitableResponse:
+    def run_grid_method(
+        self, name: str, *args, timeout: float = 1
+    ) -> AwaitableResponse:
         """Run an AG Grid API method.
 
         See `AG Grid API <https://www.ag-grid.com/javascript-data-grid/grid-api/>`_ for a list of methods.
@@ -52,7 +54,9 @@ class AgGrid(
         """
         return self.run_method("run_grid_method", name, *args, timeout=timeout)
 
-    def run_row_method(self, row_id: str, name: str, *args, timeout: float = 1) -> AwaitableResponse:
+    def run_row_method(
+        self, row_id: str, name: str, *args, timeout: float = 1
+    ) -> AwaitableResponse:
         """Run an AG Grid API method on a specific row.
 
         See `AG Grid Row Reference <https://www.ag-grid.com/javascript-data-grid/row-object/>`_ for a list of methods.
@@ -95,7 +99,9 @@ class AgGrid(
         self,
         *,
         timeout: float = 1,
-        method: Literal["all_unsorted", "filtered_unsorted", "filtered_sorted", "leaf"] = "all_unsorted",
+        method: Literal[
+            "all_unsorted", "filtered_unsorted", "filtered_sorted", "leaf"
+        ] = "all_unsorted",
     ) -> list[dict]:
         """Get the data from the client including any edits made by the client.
 
