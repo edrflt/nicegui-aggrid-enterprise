@@ -14,8 +14,8 @@ class AgGrid(
 
     def __init__(
         self,
+        options: dict,
         *,
-        options: dict = {},  # noqa: B006
         html_columns: list[int] = [],  # noqa: B006
         theme: str = "balham",
         auto_size_columns: bool = True,
