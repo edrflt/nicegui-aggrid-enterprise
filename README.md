@@ -33,7 +33,7 @@ options = {
 }
 
 # Create an instance of aggrid
-grid = aggrid(options=options)
+grid = aggrid(options)
 
 # Start the NiceGUI application
 ui.run()
