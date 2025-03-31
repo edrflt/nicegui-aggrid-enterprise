@@ -5,7 +5,7 @@ description = "Use Aggrid Enterprise in your NiceGUI app."
 authors = [{name = "Alex Pilon", email="alex.pilon@gmail.com"}]
 license = "MIT"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.8"
 dependencies = [
     "nicegui>=2.4.0",
 ]
